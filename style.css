@@ -14,7 +14,7 @@ text-align: center;
 }
 
 .do, 
-.re,
+.reOne,
 .mi,
 .fa,
 .sol,
@@ -28,4 +28,26 @@ text-align: center;
     padding-left: 20px;
     padding-right: 20px;
 
+}
+
+.do:hover, 
+.reOne:hover,
+.mi:hover,
+.fa:hover,
+.sol:hover,
+.la:hover,
+.si:hover,
+.reTwo:hover,
+.doTwo:hover,
+.do.active,
+.reOne.active,
+.mi.active,
+.fa.active,
+.sol.active,
+.la.active,
+.si.active,
+.reTwo.active,
+.doTwo.active {
+    background: #f0f0f0; /* Couleur de fond plus claire au survol */
+    transform: translateY(-2px); /* Déplacement vers le haut pour effet de clic */
 }
