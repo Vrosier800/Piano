@@ -9,16 +9,16 @@ const reTwo = new Audio("notes/re.wav");
 const doTwo = new Audio("notes/doSharp.wav");
 
 function playNote(audio, element) {
-    console.log("Playing note:", audio.src); // Log the audio source
-    audio.currentTime = 0; // Revenir au début du son (utile pour les sons rapides successifs)
-    audio.play(); // Jouer le son
-    element.classList.add("active"); // Add the active class for the hover effect
+    console.log("Playing note:", audio.src);
+    audio.currentTime = 0; 
+    audio.play();
+    element.classList.add("active");
     setTimeout(() => {
-        element.classList.remove("active"); // Remove the active class after 200ms
+        element.classList.remove("active");
     }, 200);
 }
 
-const doPlay = document.querySelector(".do");
+const doPlay = document.querySelector(".do"); 
 const reOnePlay = document.querySelector(".reOne"); // Utilisation de reOne pour la première note Ré
 const miPlay = document.querySelector(".mi");
 const faPlay = document.querySelector(".fa");
